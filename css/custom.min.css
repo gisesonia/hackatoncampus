@@ -1,6 +1,9 @@
-
+body{
+    background-color: #FFFFFF;
+}
 .side-nav {
     background-color: #0c2869;
+    overflow: hidden;
 }
 
 .side-nav li a:hover, .side-nav li a:focus {
@@ -74,6 +77,9 @@ li button {
   padding: .5em .65em;
 }
 
+#page-wrapper{
+    height: 100%;
+}
 
 h1 {
   font-size: 2.08em;
