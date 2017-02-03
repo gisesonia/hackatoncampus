@@ -222,6 +222,10 @@
         <!-- End of Search Form -->
             
     </div>
+    
+    <div class="col-md-6">
+								<a class="btn btn-primary" data-toggle="modal" data-target="#usuario"><i class="fa fa-fw -square -circle fa-plus-square"></i> Cadastrar novo usuário</a>
+							</div>
 </div>
          <div class="list">
         <div class="col-md-6 col-md-offset-3">
@@ -258,6 +262,78 @@
 
     </div>
     <!-- /#wrapper -->
+       <div class="fade modal" id="usuario" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2 class="modal-title" id="myModalLabel">Novo usuário</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Form Name -->
+                                <!-- Prepended text-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="prependedtext">Usuário</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">@</span>
+                                            <input id="prependedtext" name="prependedtext" class="form-control" placeholder="nome de usuário" type="text" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Prepended text-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="nombre">Nome</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </span>
+                                            <input id="nombre" name="nombre" class="form-control" placeholder="nome completo" type="text" required="">
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- arquivo de imagem -->
+								<div class="form-group">
+                                    <label class="col-md-4 control-label" for="nombre">Imagem</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <input type="file">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Appended Input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="email">E-mail</label>
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+										    <span class="input-group-addon">
+											<i class="fa fa-envelope"></i>
+                                            </span>
+                                            <input id="email" name="email" class="form-control" placeholder="e-mail" type="email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Password input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="password">Senha</label>
+                                    <div class="col-md-5">
+                                        <input id="password" name="password" type="password" placeholder="senha" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+								<hr class="">
+								<div class="text-center"><button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-fw fa-save"></i> Salvar</button>
+								</div>
+                                <!-- Button -->
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
